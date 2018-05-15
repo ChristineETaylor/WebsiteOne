@@ -43,11 +43,6 @@ Feature: Static pages
     And I should see "Getting Started"
     And I should see "Remote Pair Programming"
 
-  Scenario: Page should have a history of changes
-    Given I am on the static "About Us" page
-    Then I should see "Revisions"
-    And I should see 4 revisions for the page "About Us"
-
   Scenario: Page can have children and children should have a correct url
     Given the page "About Us" has a child page with title "SubPage1"
     And I am on the static "SubPage1" page
